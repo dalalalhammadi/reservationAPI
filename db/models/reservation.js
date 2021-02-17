@@ -10,32 +10,24 @@ module.exports = (sequelize, DataTypes) => {
     },
     name: {
       type: DataTypes.STRING,
-      //   allowNull: false,
+      // allowNull: false,
     },
     email: {
       type: DataTypes.STRING,
-      //   allowNull: false,
+      // allowNull: false,
     },
     phoneNumber: {
       type: DataTypes.INTEGER,
-      //   allowNull: false,
+      // allowNull: false,
     },
-    kidsNumber: {
-      type: DataTypes.INTEGER,
-      //   allowNull: false,
-    },
+    // kidsNumber: {
+    //   type: DataTypes.INTEGER,
+    //   // allowNull: false,
+    // },
     day: {
       type: DataTypes.DATEONLY,
-      //   allowNull: false,
+      // allowNull: false,
     },
-    // timing: {
-    //   type: DataTypes.INTEGER,
-    //   //   allowNull: false,
-    // },
-    // timee: {
-    //   type: DataTypes.NUMBER,
-    //   //   allowNull: false,
-    // },
   });
   return Reservation;
 };

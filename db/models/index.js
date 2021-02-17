@@ -46,5 +46,13 @@ db.Sequelize = Sequelize;
 // relations
 db.Reservation.hasMany(db.Info, { as: "infos", foreignKey: "reservationId" });
 db.Info.belongsTo(db.Reservation, { as: "reservation" });
+///
 
+// db.Time.hasOne(db.Reservation, { as: "time" });
+// db.Reservation.belongsTo(db.Time, {
+//   foreignKey: { fieldName: "timeId", allowNull: true },
+//   as: "time",
+// });
+
+///
 module.exports = db;
