@@ -3,6 +3,8 @@ const bodyParser = require("body-parser");
 const app = express();
 const cors = require("cors");
 const reservationRoutes = require("./Routes/reservation");
+const timeRoutes = require("./Routes/Time");
+const seatRoutes = require("./Routes/Seat");
 const db = require("./db/models");
 const path = require("path");
 
@@ -12,7 +14,8 @@ app.use(bodyParser.json());
 
 //routes
 app.use("/reservation", reservationRoutes);
-
+app.use("/time", timeRoutes);
+app.use("/seat", seatRoutes);
 // Not found path middleware
 app.use((req, res, next) => {
   console.log("path not found");
