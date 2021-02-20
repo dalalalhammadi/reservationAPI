@@ -24,4 +24,5 @@ router.post("/", seatCreate);
 
 router.delete("/:seatId", seatDelete);
 
+router.get("/", seatList);
 module.exports = router;
